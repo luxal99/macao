@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CN ROBOTICS CORP.</title>
+
+    <link rel="stylesheet" href="../css/ficha.css">
+
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="../imatgeslogin/Applications-robot4.png" alt="robotito">
+            <h6>CN ROBOTICS</h6>
+        </div>
+
+
+        <nav>
+            <ul class="menu">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="noticia.html">Noticies</a></li>
+                <li><a href="ficha.html">Ficha Tecnica</a></li>
+                <li><a href="index.html">Sortir</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container1">
+
+        <form>
+
+            <p>
+                <label for="ime">Ime</label>
+                <input type="text"  name="ime" id="ime" placeholder="Unesite ime">
+            </p>
+
+            <p>
+                <label for="prezime">Prezime</label>
+                <input type="text"  name="prezime" id="prezime" placeholder="Unesite prezime">
+            </p>
+
+            
+
+            <p>
+                <label for="adresa">Adresa</label>
+                <input type="text" name="adresa" id="adresa" placeholder="Unesite adresu">
+            </p>
+
+            <p>
+                <label for="datum">Datum rođenja </label>
+                <input type="date" name="datum" id="datum">
+            </p>
+
+            <p >
+                <label for="color" >Boja pozadine kartice</label>
+                <input type="color" name="color" id="color"><br>
+            </p>
+
+            <p>
+                <label for="color" >Boja slova kartice</label>
+                <input type="color" name="color2" id="colorlletra"><br>
+            </p>
+
+            <p>
+                <label for="pozicija">Odaberite svoju poziciju:</label>
+                <select class="" name="pozicija" id="pozicija">
+                    <option value="" disabled selected> Izaberite </option>
+                    <option value="menadzment">Menadžment</option>
+                    <option value="administracija">Administracija</option>
+                    <option value="proizvodnja">Proizvodnja</option>
+                    <option value="ljr">Ljudski resursi</option>
+                    
+                </select>
+            </p>
+
+            <p>
+                <label for="range">Zadovoljstvo kompanijom:</label>
+                <input type="range" min="0" max="10" id="range" name="range">
+            </p>
+
+            <!--
+            <label for="file">Foto:</label>
+            <input type="file" name="file" id="file">
+-->
+            <br><br>
+
+            <div class="con">
+                <button type="button" onclick="getData();" name="button">Pošalji</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="container2" id="fild">
+
+        <h1 id="titol"></h1>
+        <p id="n_nom"></p>
+        <p id="n_congnom"></p>
+        <p id="n_direccio"></p>
+        <p id="n_data"></p>
+        <p id="n_dni"></p>
+        <p id="n_categoria"></p>
+        <p id="n_sat"></p>
+        <img src="" alt="fotoperfil" style="display: none" id="n_img">
+
+    </div>
+
+    <script type="text/javascript" src="../js/ficha.js"></script>
+
+</body>
+</html>

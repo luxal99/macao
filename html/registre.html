@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CN ROBOTICS CORP.</title>
+
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../css/registre.css">
+
+</head>
+<body>
+
+     <h2>CN ROBOTICS</h2>
+     <img src="../imatges_registre/robo-1.png" alt="robotito">
+
+    <form class="contenidor">
+        <label for="username">Username <label class="as">*</label></label><br>
+        <input type="text" id="username" minlength="3" required>
+        <p>L'usuari ha de tenir més de 3 caràcters.</p>
+
+        <label for="email">Email <label class="as">*</label></label><br>
+        <input type="email" id="email" required>
+        <br><br>
+        <label for="pass">Password <label class="as">*</label></label><br>
+        <input type="password" id="pass" required>
+        <br><br>
+        <label for="pass2">Confirm Password <label class="as">*</label></label><br>
+        <input type="password" id="pass2" required>
+        <br>
+        <p class="dos">Els camps marcats amb (<label class="astx">*</label>) són obligatoris.</p>
+        <br>
+        <button class="cancela" type="button" onclick="cancel();">Cancel</button>
+        <button class="registra" type="submit" onclick="enregistra()">Register</button>
+
+
+    </form>
+
+    <script type="text/javascript" src="../js/registre.js"></script>
+
+</body>
+</html>
